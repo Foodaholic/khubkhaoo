@@ -1,28 +1,29 @@
-package com.startup.mobile.android.khubkhao.NavigationDrawer;
+package com.startup.mobile.android.Navigation;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.app.ActionBarDrawerToggle;
-
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.startup.mobile.android.khubkhao.R;
+import com.startup.mobile.android.R;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static com.startup.mobile.android.khubkhao.R.*;
+import static com.startup.mobile.android.R.array;
+import static com.startup.mobile.android.R.id;
+import static com.startup.mobile.android.R.layout;
 
 
-public class MainActivity extends FragmentActivity {
+public class NavigationDrawerActivity extends FragmentActivity {
 
     private List<String> mNavigationTitles;
     private DrawerLayout mDrawerLayout;
@@ -37,8 +38,6 @@ public class MainActivity extends FragmentActivity {
         setContentView(layout.activity_main);
         mNavigationTitles = Arrays.asList(getResources().getStringArray(array.titles_array));
         mDrawerLayout = (DrawerLayout) findViewById(id.drawer_layout);
-        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
 
         mDrawerList = (ListView) findViewById(id.left_drawer);
@@ -73,24 +72,24 @@ public class MainActivity extends FragmentActivity {
             mDrawerList.setSelection(0);
         }
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+//
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
+//        int id = item.getItemId();
+//
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
         return super.onOptionsItemSelected(item);
     }
 

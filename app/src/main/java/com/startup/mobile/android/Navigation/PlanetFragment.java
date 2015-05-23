@@ -1,4 +1,4 @@
-package com.startup.mobile.android.khubkhao.NavigationDrawer;
+package com.startup.mobile.android.Navigation;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.startup.mobile.android.khubkhao.R;
+import com.startup.mobile.android.R;
 
 public class PlanetFragment extends Fragment {
 

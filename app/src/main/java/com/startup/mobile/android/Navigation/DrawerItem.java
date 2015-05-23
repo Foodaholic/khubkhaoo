@@ -1,4 +1,4 @@
-package com.startup.mobile.android.khubkhao.NavigationDrawer;
+package com.startup.mobile.android.Navigation;
 
 import android.app.Fragment;
 

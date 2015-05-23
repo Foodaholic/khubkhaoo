@@ -1,4 +1,4 @@
-package com.startup.mobile.android.khubkhao.NavigationDrawer;
+package com.startup.mobile.android.Navigation;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -7,9 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.startup.mobile.android.khubkhao.R;
+import com.startup.mobile.android.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class DrawerItemListAdapter extends BaseAdapter{
